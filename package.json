@@ -1,0 +1,22 @@
+{
+  "name": "vehick-module",
+  "version": "1.0.0",
+  "description": "The vehick module responsible for the communication between vehick and elrond endpoint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VehickNetwork/vehick-module.git"
+  },
+  "author": "David Bucur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VehickNetwork/vehick-module/issues"
+  },
+  "homepage": "https://github.com/VehickNetwork/vehick-module#readme",
+  "dependencies": {
+    "@elrondnetwork/erdjs": "^10.2.7"
+  }
+}
