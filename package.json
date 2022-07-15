@@ -4,7 +4,9 @@
   "description": "The vehick module responsible for the communication between vehick and elrond endpoint",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,18 @@
   },
   "homepage": "https://github.com/VehickNetwork/vehick-module#readme",
   "dependencies": {
-    "@elrondnetwork/erdjs": "^10.2.7"
+    "@babel/runtime": "^7.18.6",
+    "@elrondnetwork/elrond-core-js": "^2.1.0",
+    "@elrondnetwork/erdjs": "^10.2.7",
+    "@elrondnetwork/erdjs-network-providers": "^0.1.6",
+    "@elrondnetwork/erdjs-walletcore": "^1.0.0",
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.19",
+    "secure-random-password": "^0.2.3",
+    "ts-node": "^10.8.2"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
   }
 }
