@@ -15,6 +15,6 @@ let keyFileObject = account.generateKeyFileFromPrivateKey(privateKey, password);
 let keyFileJson = JSON.stringify(keyFileObject, null, 4);
 
 fs.writeFileSync(`./wallet/${data.vin}.json`, keyFileJson);
-fs.writeFileSync(".env",`pass="${password}"`)
+fs.writeFileSync(".env",`PASS="${password}"`)
 
 }
